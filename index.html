@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsPulse -Unvieling Truth Uniting Voices</title>
+    <link rel="shortcut icon" href="/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <nav>
+        <div class="main-nav container flex">
+            <div class="logo"><a href="#" onclick="reload()" class="company-logo">
+                <img src="/News Pulse.png" alt="company logo">
+            </a></div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="Topic of Interest">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id = "headlines" onclick="reload('headlines')"><a href="#top">Headlines</a></li>
+                    <li class="hover-link nav-item" id = "sports" onclick="onNavItemClick('sports')"><a href="#top">Sports</a></li>
+                    <li class="hover-link nav-item" id = "business" onclick="onNavItemClick('business')"><a href="#top">Business</a></li>
+                    <li class="hover-link nav-item" id = "politics" onclick="onNavItemClick('politics')"><a href="#top">Politics</</li>
+                    <li class="hover-link nav-item" id = "technology" onclick="onNavItemClick('technology')"><a href="#top">Technology</a></li>
+                    <li class="hover-link nav-item" id = "science" onclick="onNavItemClick('science')"><a href="#top">Science</a></li>
+                </ul>
+            </div>
+            <label for="check" class="bar">
+                <span class="fa fa-bars" style="color: #2294ed;" id="bars"></span>
+                <span class="fa fa-times" id="times" style="color: #2294ed;"></span>
+            </label>
+        </div>
+    </nav>
+    
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+
+    <footer>
+        <div class="copyright">Copyright © 2024 NewsPulse. All rights reserved.</div>
+        <div class="about">
+            <ul>
+                <li><a href="/terms.html" target="_blank">Terms</a></li>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <li><a href="/privacy.html" target="_blank">Privacy</a></li>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <li><a href="/faqs.html" target="_blank">FAQs</a></li>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <li><a href="/contact.html" target="_blank">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/16e1904bc9.js" crossorigin="anonymous"></script>
+</body>
+</html>
